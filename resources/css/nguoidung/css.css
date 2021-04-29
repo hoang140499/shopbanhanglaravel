@@ -1,0 +1,950 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* Danh cho pc*/
+
+.main {
+	width:100%;
+
+	padding-top:140px;
+	margin:auto;
+	background-color: #f3f3f3;
+	text-align:center;
+}
+
+
+.tieude{
+	position: fixed; 
+	width:100%;
+	height:140px;
+	background-color:black;
+	top:0px;
+	z-index: 100;
+	float:left;
+}
+
+.tieude .mid .bg-dark1 {
+
+	color:white;
+	text-transform: uppercase;
+}
+.tieude .mid .navbar1 {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.tieude .mid .navbar-brand1 {
+	color: white;
+}
+.tieude .mid .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+	color: rgb(255 255 255 / 100%);
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgb(255 255 255 / 100%);
+}
+.tieude .mid .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+	color: rgba(255 255 255 / 50%);
+}
+
+.tieude .mid .dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	min-width: 10rem;
+	padding: 0.5rem 0;
+	margin: 0.125rem 0 0;
+	font-size: 1rem;
+	color: #ffffff;
+	text-align: left;
+	list-style: none;
+	background-color: #222;
+	background-clip: padding-box; 
+	border-top: 2px solid #28a745;
+	border-radius: 0.25rem;
+
+}
+.tieude .mid .dropdown-item {
+	display: block;
+	width: 100%;
+	padding: 0.25rem 1.5rem;
+	clear: both;
+	font-weight: 400;
+	color: #212529;
+	text-align: inherit;
+	white-space: nowrap;
+	background-color: transparent;
+	border: 0;
+	color:white;
+
+}
+
+
+
+.tieude .right svg{
+	margin:0px 0px 0px 0px
+}
+
+
+/*-------------------------------GIỎ HÀNG AJAX-------------------------------*/
+.tieude .right .cart-icon{
+	transform: translateY(150%);
+}
+
+.tieude .right .cart-icon a{
+	color: white;
+}
+
+.tieude .right .cart .cart-icon a:hover{
+
+}
+
+.tieude .right .cart .cart-icon .cart-item{
+	transform: translateX(-30%);
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	z-index: 1;
+	width: 300px;
+	height: auto;
+	margin-top: 100px;
+	border-radius: 5px;
+	position: absolute;
+	transition: all 1s;
+	border:2px solid white;
+	background-color: white;
+	box-shadow: 0 0.0625rem 2.125rem 0 rgba(0,0,0,0.5);
+}
+
+.tieude .right .cart .cart-icon{
+	height: auto;
+}
+.tieude .right .cart .cart-icon:hover .cart-item {
+	visibility: visible;
+	opacity: 1;
+	margin-top:20px;
+}
+
+.tieude .right .cart .cart-icon .cart-item table{
+	width: 300px;
+	height: auto;
+	text-align: left;
+}
+
+.tieude .right .cart .cart-icon .cart-item table tr td {
+	padding: 0px 20px 3px 0px;
+	font-weight:bold;
+}
+
+.tieude .right .cart .cart-icon .cart-item table tr td a{
+	color: black;
+}
+
+.tieude .right .cart .cart-icon .cart-item table tr td img{
+	width: 80px;
+	height: 80px;
+	border-radius: 5%;
+	margin-left: 25px;
+}
+
+
+/*----------------------------------END GIỎ HÀNG AJAX--------------------------------*/
+
+/*----------------------------QUẢN LÝ TÀI KHOẢN--------------------------------------*/
+
+.tieude .right .user a{
+	color: white;
+}
+
+.tieude .right .user {
+	transform: translateY(82%);
+}
+
+.tieude .right .user ul{
+	transform: translateX(-30%);
+	opacity: 0.5;
+	visibility: hidden;
+	position: absolute;
+	z-index: 1;
+	width: 180px;
+	height: auto;
+	margin-top: 50px;
+	border-radius: 5px;
+	position: absolute;
+	transition: all 1s;
+	border:2px solid white;
+	background-color: white;
+/*	width: auto;*/
+	height: auto;
+	text-align: left;
+	list-style: none;
+	box-shadow: 0 0.0625rem 2.125rem 0 rgba(0,0,0,0.5);
+}
+
+.tieude .right .cart .cart-icon{
+	height: auto;
+}
+.tieude .user:hover ul{
+	visibility: visible;
+	opacity: 1;
+	margin-top:20px;
+
+}
+
+
+.tieude .right .user ul li{
+	padding: 10px 10px 10px 10px;
+}
+
+.tieude .right .user ul li:hover{
+	background-color: #eaeaea;
+}
+
+.tieude .right .user ul>li:nth-child(1) {
+	border-bottom: 2px solid #bbbbbba8;
+
+}
+
+
+.tieude .right .user ul a li {
+	color: black;
+	text-decoration: none;
+}
+/*----------------------------END QUẢN LÝ TÀI KHOẢN--------------------------------------*/
+
+/* -----------------------------CONTENT----------------------------- */
+.than{
+
+	margin:auto;
+	width:1200px;
+	background-color:white;
+
+}
+
+.than .login{
+	text-align: left;
+}
+
+.than .register{
+	text-align: left;
+}
+
+/*Slide*/
+.than .quangcao-t{
+	width:100%;
+	height:540px;
+	border-radius: 3px;
+}
+.than .quangcao-t{
+	overflow:hidden;
+}
+.than  .quangcao-t:hover .dieuhuong{
+	display:block;
+}   
+.than .quangcao-t .chuyen-slide{
+	width:9999px;
+	margin-left:0px;
+	transition: all 0.7s;
+}
+.than .quangcao-t .dieuhuong{
+	position:absolute;
+	color:white;
+	font-size:60px;
+	top:48%;
+	padding-left:20px;
+}
+.than .quangcao-t .dieuhuong{
+	display:none;
+}
+.than .quangcao-t .dieuhuong .left{
+	float:left;
+}   
+
+.than .quangcao-t .dieuhuong .right{
+	float:left;
+	position:relative;
+	left:1035px;
+}   
+
+.than .quangcao-t .chuyen-slide img{
+	width:1200px;
+	height:54	0px;
+	float:left;
+	height: 540px;
+} 
+/*--------------------------------EndSlide--------------------------------*/
+
+/*Sản phẩm nổi bật trang chủ*/
+.than .mid-t{
+	width:100%;
+
+
+}
+.than .mid-t table{
+
+	width:100%;
+
+}
+
+.than .mid-t .tr{
+
+}
+/*Tên danh mục trang chủ*/
+.than .mid-t .td-left{
+	background-color: #28a745;
+	width:300px;
+	height:35px;
+	color:white;
+	border-bottom: 1px solid #ddd;
+	text-align:left;
+	padding-left:30px;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.than .mid-t .td-left a{
+	color:white;
+	text-decoration:none;
+
+}
+/*End Tên danh mục trang chủ*/
+
+/*Tên nhóm sản phẩm trang chủ*/
+.than .mid-t .td-right{
+	background-color: white;
+	border-bottom: 1px solid #ddd;
+	color:blue;
+	padding-right:10px;
+	text-align:right;
+
+}
+
+.than .mid-t .td-right ul{
+
+
+	list-style:none;
+}
+
+.than .mid-t .td-right ul li{
+	float:right;
+	line-height:30px;
+	margin-left:10px;
+	text-transform: uppercase;
+}
+
+.than .mid-t .td-right ul li a{
+	color:#000;
+	text-decoration:none;
+
+}
+
+.than .mid-t .td-right a:hover{
+	text-decoration:underline;
+}
+/*End Tên nhóm sản phẩm trang chủ*/
+
+
+.than .mid-t .number1{
+	height:413px;
+	margin:5px 0px 0px 0px;
+	background-color: rgb (0 0 0);
+	border-bottom: 20px solid rgba(0, 0, 0, 5%);
+
+}
+
+/*Card sản phẩm trang chủ*/
+.than .mid-t .number1 .card{
+	margin-top: 0px;
+	float:left;
+	margin-left:10px;
+}
+
+.than .mid-t .number1 .card .card-body .sale{
+	position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    background-color: #ed1c24;
+    padding: 4px 5px 5px;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.than .mid-t .number2{
+
+	height:463px;
+	margin:0px 0px 0px 0px;
+	background-color: rgb (0 0 0);
+	border-bottom: 20px solid rgba(0, 0, 0, 5%);
+}
+.than .mid-t .number2 .card{
+	float:left;
+
+	margin-left:10px;
+}
+
+.than .mid-t .btn-primary {
+	color: #fff;
+	background-color: #28a745;
+	border-color: #28a745;
+}
+
+.than .mid-t .btn-primary:hover {
+	color: #fff;
+	background-color: #139e33;
+	border-color: #139e33;
+}
+/*End Card sản phẩm trang chủ*/
+
+.than .mid-t .box {
+	float: left;
+	width: 50%;
+	padding: 50px;
+	height: 300px;
+	margin-top:200px;
+}
+
+.than .mid-t .clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+/*----------------------------End Sản phẩm nổi bật trang chủ----------------------------*/
+
+
+/*Hiển thị tất cả sẩn phẩm trong loại sản phẩm*/
+
+.than .allCate .number1{
+		height:413px;
+		margin:5px 0px 0px 0px;
+		background-color: rgb (0 0 0);
+		border-bottom: 20px solid rgba(0, 0, 0, 5%);
+	}
+.than .allCate .number1 .card{
+
+		float:left;
+		margin-left:10px;
+	}
+
+.than .allCate .btn-primary {
+		color: #fff;
+		background-color: #28a745;
+		border-color: #28a745;
+	}
+
+.than .allCate .btn-primary:hover {
+		color: #fff;
+		background-color: #139e33;
+		border-color: #139e33;
+	}
+.than .allCate .td-left{
+		float:left;
+		font-size:25px;
+		padding-left:20px;
+		text-align: left;
+		width: 800px;
+	}
+.than .allCate .td-left a{
+		font-size:17px;
+		color:;
+		text-decoration:none;	
+	}
+.than .allCate .td-left span{
+		font-size:17px;
+		color:#000;
+	}
+
+.than .allCate .td-right{
+		text-align:right;
+		width:70%;
+		padding-right:20px;
+
+	}
+
+.than .pages .pagination{
+	margin-top:380px;
+}
+/*-----------------------End Hiển thị tất cả sẩn phẩm trong loại sản phẩm-----------------------*/
+/*-----------------------Thông tin tài khoản-----------------------*/
+.than .Account{
+
+}
+
+/*-----------------------Comment-----------------------*/
+/*.than .change-comment{
+	display:none;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.5);
+	z-index:100;
+	overflow:auto;
+
+}
+
+.than .comment-content{
+	background-color:white;
+	margin:12% auto;
+	padding:20px;
+	width:70%;
+	height: auto;
+	box-shadow:0 5px 8px 0;
+	border-radius: 5px;
+}
+.than .change-comment .comment-content td{
+	border:2px solid rgba(0,0,0,1);
+	padding: 5px 0 5px 0;
+}*/
+
+/*Nút X của table địa chỉ cửa hàng của sản phẩm*/
+/* .than .closeBtn-Comment{
+	color:#ccc;
+	text-align:right;
+	font-size:30px;
+	position: absolute;
+	top: 170px;
+	right: 250px;
+}
+
+.than .closeBtn-Comment:hover,.closeBtn-Comment:focus{
+	color:black;
+	text-decoration:none;
+	cursor:pointer;
+	
+}*/
+/*----------------------End-Comment-----------------------*/
+/*Menu*/
+.than .menuAccount{
+	padding-top: 10px;
+	text-align: left;
+}
+
+.than .menuAccount ul{
+	list-style:none;
+}
+
+.than .menuAccount ul a {
+	text-decoration:none;
+	color: black;
+}
+
+.than .menuAccount ul a:hover li{
+	font-weight:bold;
+}
+
+.than .menuAccount ul a li{
+	padding-top: 12px;
+}
+/*End Menu*/
+
+/*thông tin*/
+.than .profileAccount{
+	margin: 10px;
+	text-align: left;
+}
+/*end thông tin*/
+
+/*matkhau*/
+.than .passwordAccount{
+	margin: 0 auto;
+	margin: 10px;
+	text-align: left;
+}
+.than .passwordAccount button{
+	float: left;
+}
+/*end matkhau*/
+
+/*menu order*/
+.than .Account .menuOrder button{
+	border: none; 
+	background-color: transparent;
+	font-size: 20px;
+	outline: none;
+}
+
+.than .Account .menuOrder button:hover{
+	font-weight: bold;
+	transition: all 0.2s;
+}
+/*end menu order*/
+/*Sản phẩm yêu thích*/
+.than .likeProductAccount{
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+
+/*-----------------------End Thông tin tài khoản-----------------------*/
+
+/*-----------------------Hiển thị thông tin sản phảm-----------------------*/
+.than .product td{
+	border: 0px solid black;
+}
+
+/*Hình ảnh gốc của sản phẩm*/
+.than .product .left-ha{
+	width:80%;
+
+	float:left;
+}
+
+/*Hình ảnh minh họa của sản phẩm*/
+.than .product .right-ha{
+	width:20%;
+
+	float:left;
+
+}
+.than .product tr{
+
+}
+
+/*Tên vs giá của sản phẩm*/
+.than .product .thongtin .tt1 ul{
+	width:100%;
+	list-style:none;
+}
+
+.than .product .thongtin .tt1 ul li{
+
+	padding: 0px 0px 0px 30px;
+}
+
+.than .product .thongtin .tt1 ul a{
+	font-size:17px;
+	color:;
+	text-decoration:none;
+}
+
+/*Khuyến mãi đặc biệt của sản phẩm*/
+.than .product .thongtin .tt2{
+
+}
+.than .product .thongtin .tt2 ul{
+	width:100%;
+	background-color: #8dffaf;
+}
+
+.than .product .thongtin .tt2 ul li{
+	list-style:none;
+	padding: 0px 0px 0px 30px;
+}
+
+/*Màu sắc của sản phẩm*/
+.than .product .mausac{
+	width:100%;
+}
+
+/*Size của sản phẩm*/
+.than .product .size{
+	width:100%;
+	padding-top:20px;
+}
+
+.than .product .size button{
+	width:35px;
+	height:35px;
+	background-color:#17175a;
+	color:white;
+}
+
+
+.than .product .muangay{
+	width:100%;
+	padding-top:20px;
+}
+
+/*Đặt mua online của sản phẩm*/
+.than .product .muangay .muangay-l{
+	width:50%;
+	height:5em;
+	float:left;
+}
+
+.than .product .muangay .muangay-l button{
+	width:95%;
+	height:100%;
+	background-color: #ea0c0c;
+	padding: 0px 0px 0px 0px;
+	border:0px;
+
+}
+
+.than .product .muangay .muangay-l button p{
+	margin:0px 0px 2px 0px;
+	color:white;
+}	
+/*End Đặt mua online của sản phẩm*/
+/*Mua tại cửa hàng của sản phẩm*/
+.than .product .muangay .muangay-r{
+	width:50%;
+	float:left;
+	height:5em;
+}
+
+.than .product .muangay .muangay-r button{
+	width:95%;
+	height:100%;
+	background-color: #000000;
+	border:0px;
+	float:right;
+}
+
+.than .product .muangay .muangay-r button p{
+	margin:0px 0px 2px 0px;
+	color:white;
+}
+/*End Mua tại cửa hàng của sản phẩm*/
+/*Sản phẩm tương tự của sản phẩm*/
+.than .product tr td .sptt{
+	width:100%;
+}
+.than .product tr td .sptt .card{
+	float:left;
+	margin-bottom:10px;
+	margin-left:10px;
+}
+
+.than .product .btn-primary {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.than .product .btn-primary:hover {
+  color: #fff;
+  background-color: #139e33;
+  border-color: #139e33;
+}
+/*End Sản phẩm tương tự của sản phẩm*/
+
+/*Mô tả của sản phẩm*/
+.than .product tr td .mt{
+	width:100%;
+
+}
+
+/*Table đỉa chỉ cửa hàng của sản phẩm*/
+.than .modal-bg{
+	display:none;
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,0.5);
+
+	z-index:100;
+	overflow:auto;
+
+}
+
+.than .modal-content{
+	background-color:white;
+	margin:12% auto;
+	padding:20px;
+	width:70%;
+
+	box-shadow:0 5px 8px 0;
+	
+}
+.than .modal-bg .modal-content td{
+	border:2px solid rgba(0,0,0,1);
+	padding: 5px 0 5px 0;
+}
+
+/*Nút X của table địa chỉ cửa hàng của sản phẩm*/
+ .than .closeBtn{
+	color:#ccc;
+	text-align:right;
+	font-size:30px;
+}
+
+.than .closeBtn:hover,.closeBtn:focus{
+	color:black;
+	text-decoration:none;
+	cursor:pointer;
+	
+}
+/*End Table đỉa chỉ cửa hàng của sản phẩm*/
+/*-----------------------End Hiển thị thông tin sản phảm-----------------------*/
+/*-----------------------Hiển thị List Cart-----------------------*/
+.than .tab{
+		width:100%;
+
+	}
+.than .tab ul{
+		list-style:none;
+		width:100%;
+
+	}
+.than .tab ul li{
+		float:left;
+		width:50%;
+		color: #888;
+		font-size:20px;
+
+	}
+.than .tab ul li.tab1{
+		text-align:left;
+		padding-left:50px;
+	}
+.than .tab ul li.tab2{
+		text-align:right;
+		padding-right:50px;
+	}
+
+.than .giohang{
+		width:100%;
+	}
+.than	.giohang table{
+		width:100%;
+	}
+.than .giohang table tr.1{
+
+	}
+
+.than .giohang table tr.nb1 td{
+		border-bottom:2px solid rgba(0, 0, 0, 0.1 );
+		padding:10px 0px 10px 0px;
+
+	}
+
+.than .giohang table tr.nb2 td{
+		border-bottom:2px solid rgba(0, 0, 0, 0.1 );
+		padding:10px 0px 10px 0px;
+
+	}
+
+.than .giohang table tr.nb3 td{
+		border-bottom:4px solid rgba(0, 0, 0, 0.1 );
+		padding:10px 0px 10px 0px;
+	}
+
+
+.than .giohang table tr.nb4{
+		width:100%;
+	}
+	/*Bi Loi khi them size vs mau sac tu day tro xuong */
+.than .giohang table tr.nb4  td{
+		padding:10px 0px 0px 0px;
+		width:50%;
+	}
+
+.than .giohang table input{
+		display: block;
+		padding: 9px 0;
+		height: 50px;
+		border: 1px solid #d9d9d9;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		margin: 10px 0 5px;
+		text-indent: 10px;
+		width: 99%;
+		font-size:25px;
+		outline: none;
+	}
+
+.than .giohang table tr.nb5 td.mid{
+		width:100%;
+	}
+.than .giohang table tr td.mid input{
+		display: block;
+		padding: 9px 0;
+		height: 50px;
+		border: 1px solid #d9d9d9;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		margin: 10px 0 5px;
+		text-indent: 10px;
+		width: 99.5%;
+		font-size:25px;
+		outline: none;
+	}
+
+.than .giohang table tr.nb6 td.submit input{
+		display: block;
+		padding: 9px 0;
+		height: 50px;
+		border: 1px solid #d9d9d9;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		margin: 10px 0 5px;
+		text-indent: 10px;
+		width: 66%;
+		font-size:25px;
+		outline: none;
+		background: rgb(45,110,21);
+		background: linear-gradient(0deg, rgba(45,110,21,1) 0%, rgba(0,255,4,1) 100%);
+		text-align:center;
+		margin-left:18%;
+		color:white;
+		font-weight:bold;
+	}
+/*-----------------------End Hiển thị List Cart-----------------------*/
+
+/*------------------------------FOOTER------------------------------*/
+.banquyen{
+	width:100%;
+	height:auto;
+	background-color:#000;
+	float:left;
+	color: white;
+}
+
+.banquyen h4{
+	font-family: Tahoma;
+	padding-bottom: 5px;
+}
+
+.banquyen h6{
+	font-family: Tahoma;
+	padding-bottom: 5px;
+}
+
+.banquyen1{
+	width:100%;
+	height:100px;
+	background-color:#000;
+	float:left;
+}
+/*------------------------------END FOOTER------------------------------*/
+
+
+/* Danh cho dien thoai*/
+@media only screen and (max-width:739px){
+
+}
+/* Danh cho tablet*/
+@media only screen and (min-width:740px) and (max-width:1023px){
+	.tieude .left{
+		
+	}
+	.tieude .mid{
+		
+	}
+	.tieude .right{
+
+	}
+}
+/* Danh cho pc*/
+@media only screen and (min-width:1024px){
+
+}
